@@ -20,18 +20,18 @@ app.use((req, res, next) => {
   next();
 });
 
-/*app.post("/api/auth/signup", (req, res, next) => {
+app.post("/api/auth/signup", (req, res, next) => {
   const user = new User({
     ...req.body
   });
   user.save()
-  .then(() => res.status(201).json({message: "Mot de passe utilisateur haché - Utilisateur ajouté à la base de données !"}))
+  .then(() => res.status(201).json({message/*: "Mot de passe utilisateur haché - Utilisateur ajouté à la base de données !"*/}))
   .catch(error => res.status(400).json({error}));
 });
 
 app.post("/api/auth/login", (req, res, next) => {
 
-})*/
+})
 
 app.use((req, res) => {
     res.json({message:"blablatest"});
