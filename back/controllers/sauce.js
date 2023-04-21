@@ -4,19 +4,19 @@ const fs = require('fs');
 
 exports.createSauce = (req, res, next) => {
     const sauceObject = JSON.parse(req.body.sauce);
-    //delete sauceObject._id;
+    delete sauceObject.id;
     //delete sauceObject._userId;
+    //delete req.body._id;
     const sauce = new Sauce({
         ...sauceObject,
-        //...req.body.sauce,
-        /*userId: req.body.auth.userId,
-        name: req.body.auth.name,
-        manufacturer: req.body.auth.manufacturer,
-        description: req.body.auth.description,
-        mainPepper: req.body.auth.mainPepper,
-        heat: req.body.auth.heat,*/
-        imageUrl: `${req.protocol}://${req.get('host')}/images/${req.file.filename}`
-    });
+        userId: req.auth.userId,
+        imageUrl: `${req.protocol}://${req.get('host')}/images/${req.file.filename}`,
+        likes: 0,
+        dislikes: 0,
+        usersLiked: [],
+        usersDisliked: []
+        
+      });
   
     sauce.save()
     .then(() => { res.status(201).json({message: 'Sauce enregistrée !'})})
@@ -25,19 +25,10 @@ exports.createSauce = (req, res, next) => {
   };
   
   exports.getOneSauce = (req, res, next) => {
-    Sauce.findOne({
-      _id: req.params.id
-    }).then(
-      (sauce) => {
-        res.status(200).json(sauce);
-      }
-    ).catch(
-      (error) => {
-        res.status(404).json({
-          error: error
-        });
-      }
-    );
+    Sauce.findOne({ _id: req.params.id })
+    .then(sauce => res.status(200).json(sauce))      
+    .catch(error => 
+        res.status(404).json({ error }));
   };
   
   exports.modifySauce = (req, res, next) => {
@@ -94,3 +85,7 @@ exports.createSauce = (req, res, next) => {
       }
     );
   };
+
+  exports.likeSauce = (req, res, next) => {
+
+  }
