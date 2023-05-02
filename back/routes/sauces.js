@@ -13,7 +13,7 @@ router.put("/:id", auth, multer, saucesCtrl.modifySauce);
 router.delete("/:id", auth, saucesCtrl.deleteSauce);
 router.get("/:id", auth, saucesCtrl.getOneSauce);
 router.get("/", auth, saucesCtrl.getAllSauces);
-router.post('/:id/like',auth , saucesCtrl.likeSauce);
+router.post("/:id/like", auth, saucesCtrl.rateSauce);
 
 module.exports = router;
 
