@@ -1,6 +1,9 @@
 const http = require("http");
 const app = require("./app");
+const dotenv = require("dotenv");
+dotenv.config();
 
+//normalizePort returns a valid port, whether supplied as a number or as a string
 const normalizePort = val => {
 	const port = parseInt(val, 10);
   
@@ -15,6 +18,7 @@ const normalizePort = val => {
   const port = normalizePort(process.env.PORT || '3000');
   app.set('port', port);
   
+ //errorHandler looks for differents errors and manage them in an appropriate way
   const errorHandler = error => {
 	if (error.syscall !== 'listen') {
 	  throw error;
