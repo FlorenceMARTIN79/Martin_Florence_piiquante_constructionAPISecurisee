@@ -11,11 +11,11 @@ It is designed to run with a noSQL database MongoDB ( <https://www.mongodb.com/>
 This project is intended to be runned with the front-end project you can clone here : <https://github.com/OpenClassrooms-Student-Center/Web-Developer-P6> . Please follow the instructions in the README file of this project to run it properly.
 
 ## Table of Contents
-1.[ Set up and running](#requirements-for-the-set-up-of-the-project)
+1.[ Set up and running](#1---requirements-for-the-set-up-of-the-project)
 
-2.[ Help](#help)
+2.[ Help](#2---help)
 
-3.[ Author](#author)
+3.[ Author](#3---author)
 
 ***
 
@@ -45,7 +45,8 @@ You can find help by running `npm help`.
 
 
 ## 3 - Author : 
-Florence MARTIN 79, OpenClassrooms student
+FlorenceMARTIN79, OpenClassrooms student
+
 Study project completed during my training as a web developer
 
 
