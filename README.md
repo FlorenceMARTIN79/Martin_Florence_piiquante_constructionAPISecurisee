@@ -5,14 +5,14 @@ This project was generated with node.js (see <https://nodejs.org/en> for setup i
 
 It is intended to be runned on the 3000 port by default.
 
-The project is designed to run with a noSQL database on MongoDB (https://www.mongodb.com/). If you do no have a MongoDB account, please create it now. Then, create a DataBase and recover the DataBase identifier and password to include them in the .env file (see below).
+The project is designed to run with a noSQL database on MongoDB ( <https://www.mongodb.com/> ). If you do no have a MongoDB account, please create it now. Then, create a DataBase and recover the DataBase identifier and password to include them in the .env file (see below).
 
-This project is intended to be run with the front-end project you can clone here : https://github.com/OpenClassrooms-Student-Center/Web-Developer-P6. Please follow the instructions in the README file of this project to run it properly.
+This project is intended to be run with the front-end project you can clone here : <https://github.com/OpenClassrooms-Student-Center/Web-Developer-P6> . Please follow the instructions in the README file of this project to run it properly.
 
 
 ## Requirements for the set up of the project : 
 
-* You need to have node.js installed on the computer executing the code. If you have not already installed it, please do it from this page : `https://nodejs.org/en`
+* You need to have node.js installed on the computer executing the code. If you have not already installed it, please do it from this page : <https://nodejs.org/en>.
 
 * If it is not already existing, the creation of an "image" folder in the back is needed when installing the project : it will contain all the images loaded by the users. If you have loaded it when cloning the project, please delete any file from it as they do not concern your DataBase.
 
