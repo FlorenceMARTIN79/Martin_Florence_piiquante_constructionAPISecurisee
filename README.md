@@ -1,4 +1,4 @@
-# [Piiquante]
+# Piiquante
 ### A web application to rate pepper sauces
 ***
 
@@ -6,21 +6,21 @@ This project was generated with node.js (see <https://nodejs.org/en> for setup i
 
 It is intended to be runned on the 3000 port by default.
 
-It is designed to run with a noSQL database on MongoDB ( <https://www.mongodb.com/> ). If you do no have a MongoDB account, please create it now. Then, create a DataBase and cluster. Then recover the DataBase identifier and password to include them in the .env file (see below).
+It is designed to run with a noSQL database MongoDB ( <https://www.mongodb.com/> ). If you do no have a MongoDB account, please create it now. Then, create a DataBase and cluster. Then recover the DataBase identifier and password to include them in the .env file (see below).
 
 This project is intended to be runned with the front-end project you can clone here : <https://github.com/OpenClassrooms-Student-Center/Web-Developer-P6> . Please follow the instructions in the README file of this project to run it properly.
 
-## TAble of Contents
-[ Set up and running](#requirements-for-the-set-up-of-the-project)
-*
-[ Help](#help)
-*
-[ Author](#author)
+## Table of Contents
+1.[ Set up and running](#requirements-for-the-set-up-of-the-project)
+
+2.[ Help](#help)
+
+3.[ Author](#author)
 
 ***
 
 
-### Requirements for the set up of the project : 
+### 1 - Requirements for the set up of the project : 
 
 * You need to have node.js installed on your computer. If you have not already installed it, please do it from this page : <https://nodejs.org/en>.
 
@@ -31,20 +31,20 @@ If you have loaded it when cloning the project, please replace the identifier an
 
 * Inside your back folder, run `npm install` to install locally all the dependencies needed for the proper running of the project, among which the framework Express (see <https://expressjs.com/> ).
 
-* Run `node server` to start the server on the port 3000 by default.
+* Run `node server` to start the server.
 
 * Methods of request allowed : 
 POST - GET - PUT - DELETE
 
-**
 
-## Help :
+
+## 2 - Help :
 
 You can find help by running `npm help`.
 
-**
 
-## Author : 
+
+## 3 - Author : 
 Florence MARTIN 79, OpenClassrooms student
 Study project completed during my training as a web developer
 
