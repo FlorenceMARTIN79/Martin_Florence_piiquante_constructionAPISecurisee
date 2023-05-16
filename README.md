@@ -1,8 +1,11 @@
-HotTakes
+# Piiquante 
+### A web application to rate pepper sauces
 
 This project was generated with node.js (see `https://nodejs.org/en` for setup if not done yet) version v18.15.0.
 
-The project is designed to run with a noSQL database on MongoDB (https://www.mongodb.com/).
+The project is designed to run with a noSQL database on MongoDB (https://www.mongodb.com/). If you do no have a MongoDB account, please create it now. Then, create a DataBase and recover the DataBase identifier and password to include them in the .env file (see below).
+
+This project is intended to be run with the front-end project you can clone here : https://github.com/OpenClassrooms-Student-Center/Web-Developer-P6. Please follow the instructions in the README file of this project to run properly.
 
 
 Requirements for the set up of the project : 
